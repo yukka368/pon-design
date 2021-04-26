@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/viewport-extra@1.0.3/dist/viewport-extra.min.js"></script>
+  <script>
+    // 最小幅だけ設定
+    new ViewportExtra(375)
+    // 最大幅を設定
+    new ViewportExtra({ minWidth: 360, maxWidth: 414 })
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- リセットcssの読み込み -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <!-- ▼style.cssの読み込みの記述を書く -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ▼ここからマークアップを行う -->
+<!-- ヘッダー -->
+<div class="wrapper">
+  <div class="header active">
+    <div class="header__logo">
+      <h1 class="logo">
+        <a href="." class="log__link">
+          <img src="C:/ma-kuappu/pon-design/image/パス 10.png" alt="">
+        </a>
+      </h1>
+    </div>
+    <nav class="global-nav">
+      <ul class="global-nav__list">
+      <li class="global-nav__item">
+        <a href="news.html">NEWS</a>
+      </li>
+      <li class="global-nav__item">
+        <a href="service.html">SERVICE</a>
+      </li>
+      <li class="global-nav__item">
+        <a href="works.html">WORKS</a>
+      </li>
+      <li class="global-nav__item">
+        <a href="company.html">COMPANY</a>
+      </li>
+      <li class="global-nav__item">
+        <a href="recruit.html">RECRUIT</a>
+      </li>
+      <li class="global-nav__item">
+        <a href="contact.html">CONTACT</a>
+      </li>
+      </ul>
+    </nav>
+    <button type="button" class="btn-menu">
+      <span class="btn-menu__line"></span>
+    </button>
+  </div>
+  <!-- ヘッダーディスプレイ -->
+  <div class="hero">
+    <div class="hero__inner">
+      <div class="hero__heading">
+        <div class="hero__title">
+          WEB DESIGN SPAECIALIST
+        </div>
+        <div class="hero__subtitle">
+          お客様の夢をかなえる
+          <br class="u-sp-only">
+          Webサイトを作成
+        </div>
+
+      </div>
+      <div class="hero__link">
+        <a href="contact.html" class="btn btn--transparent">
+          CONTACT
+          ::after<!--これ何？？？検索する-->
+        </a>
+      </div>
+    </div>
+    <span class="hero__scroll">
+      SCROLL
+    </span>
+  </div>
+  <!-- newsbody -->
+  <div class="contents" id="contents">
+    <section class="news l-section">
+      <div class="l-inner l-inner--sm">
+        <div class="new__heading">
+          <h2 class="heading-primary"><!-- newsお知らせのタイトル-->
+            NEWS
+            <span class="heading-primary__sub">お知らせ</span>
+          </h2>
+        </div>
+        <div class="news__body"><!-- newsの詳細-->
+          <div class="news-list">
+            <ul class="news-list__list">
+              <li class="news-list__item"><!--news詳細一つ目-->
+                <div class="news-list__heading">
+                  <time datetime="2020-02-01" class="news-list__date">2030.02.01</time>
+                  <div class="news-list__label">
+                    <span class="label-category">お知らせ</span>
+                  </div>
+                  <div class="news-list__body">
+                    <a href="#" class="news-list__link">
+                      Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
+                  </div>
+                </div>
+              </li>
+              <li class="news-list__item"><!--news詳細一つ目-->
+                <div class="news-list__heading">
+                  <time datetime="2020-01-25" class="news-list__date">2030.01.25</time>
+                  <div class="news-list__label">
+                    <span class="label-category">制作実績</span>
+                  </div>
+                  <div class="news-list__body">
+                    <a href="#" class="news-list__link">
+                      Smoothiesta様のWebサイトを制作いたしました</a>
+                  </div>
+                </div>
+              </li>
+              <li class="news-list__item"><!--news詳細一つ目-->
+                <div class="news-list__heading">
+                  <time datetime="2020-01-20" class="news-list__date">2030.01.20</time>
+                  <div class="news-list__label">
+                    <span class="label-category">採用</span>
+                  </div>
+                  <div class="news-list__body">
+                    <a href="#" class="news-list__link">
+                      Webデザイナーを１名募集中です！</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service l-section">
+      <div class="l-inner l-inner--sm"><!--なんで二つのclassを指定しているのか？-->
+        <div class="service__heading">
+          <h2 class="heading-primary">
+            SERVICE
+            <span class="heading-primary__sub">事業内容</span>
+          </h2>
+        </div>
+        <div class="service__body">
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="card__imag-wrapper">
+                <img class="card__img" src="C:/ma-kuappu/pon-design/image/jessy-smith-zFOm6KzA-7g-unsplash.jpg" alt="">
+              </div>
+              <div class="card__body">
+                <div class="card__title">Webサイト制作</div>
+                <div class="card__text">
+                  <p>新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__imag-wrapper">
+                <img class="card__img" src="C:/ma-kuappu/pon-design/image/luke-chesser-JKUTrJ4vK00-unsplash (1).jpg" alt="">
+              </div>
+              <div class="card__body">
+                <div class="card__title">Webサイト運用</div>
+                <div class="card__text">
+                  <p>サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案をいたします。</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__imag-wrapper">
+                <img class="card__img" src="C:/ma-kuappu/pon-design/image/pexels-cottonbro-3585088.jpg" alt="">
+              </div>
+              <div class="card__body">
+                <div class="card__title">アプリ開発</div>
+                <div class="card__text">
+                  <p>スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service__link">
+          <a href="service.html" class="btn"></a>
+        </div>
+      </div>
+    </section>
+    <section class="works l-section">
+      <div class="l-inner l-inner--xl">
+        <div class="works__img-wrapper">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="C:/ma-kuappu/pon-design/image/smoothiesta.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="C:/ma-kuappu/pon-design/image/画像 23.png" alt=""></div>
+              <div class="swiper-slide"><img src="C:/ma-kuappu/pon-design/image/画像 25.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination">
+              <span class="swiper-pagination-bullet"></span>
+              <span class="swiper-pagination-bullet"></span>
+              <span class="swiper-pagination-bullet"></span>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="works__contents">
+          <div class="works__heading">
+            <h2 class="heading-primary">
+              WORKS
+              <span class="heading-primary__sub">
+                制作実績
+              </span>
+            </h2>
+          </div>
+          <div class="works__body">
+            <div class="works__text">
+              <p>様々なジャンルのWebサイト制作が可能です。
+                <br>ご購入やお申込み数の増加などを実現します！</p>
+            </div>
+          </div>
+          <div class="works__link">
+            <a href="works.html" class="btn">MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="company l-section">
+      <div class="l-inner">
+        <div class="company__heading">
+          <h2 class="heading-primary">
+            COMPANY
+            <span class="heading-praimary__sub">
+              私たちについて
+            </span>
+          </h2>
+        </div>
+        <div class="company__body">
+          <div class="message">
+            <div class="message__heading">
+              <span class="message__underline">
+                サイトのゴール＝
+                <br class="u-sp-only">夢を叶えること
+              </span>
+            </div>
+            <div class="message__text">
+              <p>
+                <br>お客様の夢を叶えること。
+                <br>それがWebサイトのゴールであり、私たちが目指すことです。
+                <br>だからこそちゃんと成果を出すサイトを全力でお作りします。
+                <br>お客様の笑顔を見たい。
+                <br>夢を実現する手助けをさせてください。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="company__link">
+          <a href="company.html" class="btn">MORE</a>
+        </div>
+      </div>
+    </section>
+    <section class="recruit l-section">
+      <div class="l-inner">
+        <div class="recruit__contents">
+          <div class="recruit__contents-inner">
+            <div class="recruit__heading">
+              <h2 class="heading-primary">
+                RECRUIT
+                <span class="heading-primary__sub">
+                  採用情報
+                </span>
+              </h2>
+            </div>
+            <div class="recruit__body">
+              <div class="recruit__text">
+                <p>私たちと一緒に働きませんか？</p>
+              </div>
+            </div>
+            <div class="recruit__btn">
+              <div class="recruit__link">
+                <a href="recruit.html" class="btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recruit__img-wrapper">
+          <img class="recruit__img" src="C:/ma-kuappu/pon-design/image/you-x-ventures-X8H8vPcelPk-unsplash.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="l-inner">
+        <div class="contact__heading">
+          <h2 class="heading-primary">
+            CONTACT
+            <span class="heading-primary__sub">
+              お問い合わせ
+            </span>
+          </h2>
+        </div>
+        <div class="contact__body">
+          <div class="contact__text">
+            <p>Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+          </div>
+        </div>
+        <div class="contact__link">
+          <a href="contact.html" class="btn">MORE</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul class="footer-nav_list">
+          <li class="footer-nav_item">
+            <a href="" class="footer-nav_link">HOME</a>
+          </li>
+          <li class="footer-nav_item">
+            <a href="" class="footer-nav_link">NEWS</a>
+          </li>
+          <li class="footer-nav_item">
+            <a href="" class="footer-nav_link">SERVICE</a>
+          </li>
+          <li class="footer-nav_item">
+            <a href="" class="footer-nav_link">WORKS</a>
+          </li>
+          <li class="footer-nav_item">
+            <a href="" class="footer-nav_link">COMPANY</a>
+          </li>
+          <li class="footer-nav_item">
+            <a href="" class="footer-nav_link">RECRUIT</a>
+          </li>
+          <li class="footer-nav_item">
+            <a href="" class="footer-nav_link">CONTACT</a>
+          </li>          
+        </ul>
+      </nav>
+      <div class="copyright">
+        <a href="" class="copyright_link">©PON DESIGN</a>
+      </div>
+    </footer>
+    <div class="page-top">
+      <a href="#" class="page-top_link">
+        <i></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
