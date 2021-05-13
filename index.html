@@ -11,9 +11,7 @@
     // 最大幅を設定
     new ViewportExtra({ minWidth: 360, maxWidth: 414 })
   </script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- リセットcssの読み込み -->
+ <!-- リセットcssの読み込み -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <!-- ▼style.cssの読み込みの記述を書く -->
     <link rel="stylesheet" href="style.css">
@@ -23,111 +21,109 @@
   <!-- ▼ここからマークアップを行う -->
 <!-- ヘッダー -->
 <div class="wrapper">
-  <div class="header active">
-    <div class="header__logo">
+  <div class="header action">
+    <div class="header_logo">
       <h1 class="logo">
-        <a href="." class="log__link">
-          <img src="C:/ma-kuappu/pon-design/image/パス 10.png" alt="">
+        <a href="." class="log_link">
+          <img src="C:/ma-kuappu/pon-design/image/logo.png" alt="">
         </a>
       </h1>
     </div>
     <nav class="global-nav">
-      <ul class="global-nav__list">
-      <li class="global-nav__item">
-        <a href="news.html">NEWS</a>
-      </li>
-      <li class="global-nav__item">
-        <a href="service.html">SERVICE</a>
-      </li>
-      <li class="global-nav__item">
-        <a href="works.html">WORKS</a>
-      </li>
-      <li class="global-nav__item">
-        <a href="company.html">COMPANY</a>
-      </li>
-      <li class="global-nav__item">
-        <a href="recruit.html">RECRUIT</a>
-      </li>
-      <li class="global-nav__item">
-        <a href="contact.html">CONTACT</a>
-      </li>
+      <ul class="global-nav_list">
+        <li class="global-nav_item">
+          <a href="news.html" class="global-nav_link">NEWS</a>
+        </li>
+        <li class="global-nav_item">
+          <a href="service.html" class="global-nav_link">SERVICE</a>
+        </li>
+        <li class="global-nav_item">
+          <a href="works.html" class="global-nav_link">WORKS</a>
+        </li>
+        <li class="global-nav_item">
+          <a href="company.html" class="global-nav_link">COMPANY</a>
+        </li>
+        <li class="global-nav_item">
+          <a href="recruit.html" class="global-nav_link">RECRUIT</a>
+        </li>
+        <li class="global-nav_item">
+          <a href="contact.html" class="global-nav_link">CONTACT</a>
+        </li>
       </ul>
     </nav>
     <button type="button" class="btn-menu">
       <span class="btn-menu__line"></span>
     </button>
   </div>
+
+
   <!-- ヘッダーディスプレイ -->
   <div class="hero">
-    <div class="hero__inner">
-      <div class="hero__heading">
-        <div class="hero__title">
+    <div class="hero_inner">
+      <div class="hero_heading">
+        <div class="hero_title">
           WEB DESIGN SPAECIALIST
         </div>
-        <div class="hero__subtitle">
-          お客様の夢をかなえる
-          <br class="u-sp-only">
-          Webサイトを作成
+        <div class="hero_subtitle">
+          お客様の夢をかなえる<br class="u-sp-only">
+          Webサイトを作成<br class="u-sp-only">
         </div>
 
       </div>
-      <div class="hero__link">
-        <a href="contact.html" class="btn btn--transparent">
+      <div class="hero_link">
+        <a href="contact.html" class="btn btn-transparent"><!-- ボタンcontact -->
           CONTACT
-          ::after<!--これ何？？？検索する-->
         </a>
       </div>
     </div>
-    <span class="hero__scroll">
+    <span class="hero_scroll">
       SCROLL
     </span>
   </div>
+  
   <!-- newsbody -->
   <div class="contents" id="contents">
     <section class="news l-section">
       <div class="l-inner l-inner--sm">
-        <div class="new__heading">
+        <div class="news_heading">
           <h2 class="heading-primary"><!-- newsお知らせのタイトル-->
             NEWS
-            <span class="heading-primary__sub">お知らせ</span>
+            <span class="heading-primary_sub">お知らせ</span>
           </h2>
         </div>
-        <div class="news__body"><!-- newsの詳細-->
+        <div class="news_body"><!-- newsの詳細-->
           <div class="news-list">
-            <ul class="news-list__list">
-              <li class="news-list__item"><!--news詳細一つ目-->
-                <div class="news-list__heading">
-                  <time datetime="2020-02-01" class="news-list__date">2030.02.01</time>
-                  <div class="news-list__label">
+            <ul class="news-list_list">
+              <li class="news-list_item"><!--news詳細一つ目-->
+                <div class="news-list_heading">
+                  <time datetime="2020-02-01" class="news-list_date">2030.02.01</time>
+                  <div class="news-list_label">
                     <span class="label-category">お知らせ</span>
                   </div>
-                  <div class="news-list__body">
-                    <a href="#" class="news-list__link">
-                      Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
+                  <div class="news-list_body">
+                    <a href="#" class="news-list_link">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
                   </div>
                 </div>
               </li>
-              <li class="news-list__item"><!--news詳細一つ目-->
-                <div class="news-list__heading">
-                  <time datetime="2020-01-25" class="news-list__date">2030.01.25</time>
-                  <div class="news-list__label">
+              <li class="news-list_item"><!--news詳細一つ目-->
+                <div class="news-list_heading">
+                  <time datetime="2020-01-25" class="news-list_date">2030.01.25</time>
+                  <div class="news-list_label">
                     <span class="label-category">制作実績</span>
                   </div>
-                  <div class="news-list__body">
-                    <a href="#" class="news-list__link">
-                      Smoothiesta様のWebサイトを制作いたしました</a>
+                  <div class="news-list_body">
+                    <a href="#" class="news-list_link">Smoothiesta様のWebサイトを制作いたしました</a>
                   </div>
                 </div>
               </li>
-              <li class="news-list__item"><!--news詳細一つ目-->
-                <div class="news-list__heading">
-                  <time datetime="2020-01-20" class="news-list__date">2030.01.20</time>
-                  <div class="news-list__label">
+              <li class="news-list_item"><!--news詳細一つ目-->
+                <div class="news-list_heading">
+                  <time datetime="2020-01-20" class="news-list_date">2030.01.20</time>
+                  <div class="news-list_label">
                     <span class="label-category">採用</span>
                   </div>
-                  <div class="news-list__body">
-                    <a href="#" class="news-list__link">
-                      Webデザイナーを１名募集中です！</a>
+                  <div class="news-list_body">
+                    <a href="#" class="news-list_link">Webデザイナーを１名募集中です！</a>
                   </div>
                 </div>
               </li>
@@ -148,7 +144,7 @@
           <div class="card-wrapper">
             <div class="card">
               <div class="card__imag-wrapper">
-                <img class="card__img" src="C:/ma-kuappu/pon-design/image/jessy-smith-zFOm6KzA-7g-unsplash.jpg" alt="">
+                <img class="card__img" src="C:/ma-kuappu/pon-design/image/sample_web.jpg" alt="">
               </div>
               <div class="card__body">
                 <div class="card__title">Webサイト制作</div>
@@ -159,7 +155,7 @@
             </div>
             <div class="card">
               <div class="card__imag-wrapper">
-                <img class="card__img" src="C:/ma-kuappu/pon-design/image/luke-chesser-JKUTrJ4vK00-unsplash (1).jpg" alt="">
+                <img class="card__img" src="C:/ma-kuappu/pon-design/image/sample_date.jpg" alt="">
               </div>
               <div class="card__body">
                 <div class="card__title">Webサイト運用</div>
@@ -170,7 +166,7 @@
             </div>
             <div class="card">
               <div class="card__imag-wrapper">
-                <img class="card__img" src="C:/ma-kuappu/pon-design/image/pexels-cottonbro-3585088.jpg" alt="">
+                <img class="card__img" src="C:/ma-kuappu/pon-design/image/sample_smartphone.jpg" alt="">
               </div>
               <div class="card__body">
                 <div class="card__title">アプリ開発</div>
@@ -191,9 +187,9 @@
         <div class="works__img-wrapper">
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="C:/ma-kuappu/pon-design/image/smoothiesta.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="C:/ma-kuappu/pon-design/image/画像 23.png" alt=""></div>
-              <div class="swiper-slide"><img src="C:/ma-kuappu/pon-design/image/画像 25.png" alt=""></div>
+              <div class="swiper-slide"><img src="C:/ma-kuappu/pon-design/image/sample_smoothiesta.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="C:/ma-kuappu/pon-design/image/sample_fashion.png" alt=""></div>
+              <div class="swiper-slide"><img src="C:/ma-kuappu/pon-design/image/sample_webconference.png" alt=""></div>
             </div>
             <div class="swiper-pagination">
               <span class="swiper-pagination-bullet"></span>
@@ -215,8 +211,9 @@
           </div>
           <div class="works__body">
             <div class="works__text">
-              <p>様々なジャンルのWebサイト制作が可能です。
-                <br>ご購入やお申込み数の増加などを実現します！</p>
+              <p>様々なジャンルのWebサイト制作が可能です。<br>
+                ご購入やお申込み数の増加などを実現します！<br>
+              </p>
             </div>
           </div>
           <div class="works__link">
@@ -245,11 +242,11 @@
             </div>
             <div class="message__text">
               <p>
-                <br>お客様の夢を叶えること。
-                <br>それがWebサイトのゴールであり、私たちが目指すことです。
-                <br>だからこそちゃんと成果を出すサイトを全力でお作りします。
-                <br>お客様の笑顔を見たい。
-                <br>夢を実現する手助けをさせてください。
+                お客様の夢を叶えること。<br>
+                それがWebサイトのゴールであり、私たちが目指すことです。<br>
+                だからこそちゃんと成果を出すサイトを全力でお作りします。<br>
+                お客様の笑顔を見たい。<br>
+                夢を実現する手助けをさせてください。<br>
               </p>
             </div>
           </div>
