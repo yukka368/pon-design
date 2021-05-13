@@ -1,0 +1,130 @@
+
+*{
+    font-family: "Montserrat";
+}
+/* ヘッダー */
+.header{
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    position: fixed;/* これのおかげでheaderとメインビューが一体化している */
+    width: 100%;
+    padding: 30px;
+    justify-content: flex-start;
+    top: 0px;
+}
+
+.global-nav{
+    margin: 0 0 0 auto;
+}
+
+.global-nav_list{
+    list-style: none;
+    padding-left: 30px;
+    display: flex;
+}
+
+
+.global-nav_item{
+    margin-right: 25px;
+}
+
+.global-nav_link{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* ヘッダーディスプレイ */
+.hero{
+    min-height: 100vh;  /* この指定で最低限表示領域を全て埋める */
+    background: url(C:\ma-kuappu/pon-design/image/bg.png) top center / cover no-repeat;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_title{
+    color: #FFFFFF; 
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.hero_subtitle{
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-top: 20px;
+    font-family: "Hiragino Sans";
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero_link{
+    margin-top: 50px;
+}
+
+.hero_link{
+    text-align: center;
+}
+/* ボタン */
+.btn{
+    color:#ffffff;
+    font-size: 14px;
+    padding: 20px 0;
+    border: solid 1px #FFFFFF;
+    border-radius: 100vh; /*何で100vhであの形になるのか？？？ */
+    width: 200px; /* aタグでカッコしているからinline-blockにしないといけない？ */
+    display: inline-block; 
+    text-decoration: none;
+}
+
+.u-sp-only{
+    display: none;
+}
+/* スクロール */
+.hero_scroll{
+    color: #FFFFFF;
+    position:absolute;
+    right: 50px;
+    writing-mode: vertical-rl;
+    padding: 10px 10px 90px 10px;
+    bottom: 0px;
+    font-size: 12px;
+}
+
+/* newsbody */
+.news{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-inner{
+    display: flex;
+}
+
+.news_heading{
+    float: left;
+    margin-right: 50px;
+}
+
+.news_body{
+    float: left;
+}
+
+.news-list_date{
+    text-decoration: none;
+}
+
+.news-list_label{
+    display: inline-block;
+}
+
+.news-list_body{
+    display:inline-block;
+}
